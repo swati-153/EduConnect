@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #040303;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040303;
+    color: white;
+}
+
+.brand-title img {
+    padding-top: 10px;
+    width: 300px;
+}
+
+.navbar-links {
+    font-size: 20px;
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+/**/
+.slogan-section {
+    height: 250px;
+    background-image: url('../img/header-background.png');
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 768px) {
+    .slogan-section {
+        height: auto;
+        padding: 40px 10px;
+        font-size: 24px;
+    }
+}
+
+/*services style*/
+.ServicescardContainer {
+    background-color: #040303;
+    padding: 30px;
+}
+
+.services {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.service-card {
+    color: white;
+    float: left;
+    width: calc(33.33% - 20px);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 18px;
+}
+
+.ServicescardContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-color-1 {
+    background-color: #35155D;
+}
+
+.card-color-2 {
+    background-color: #900C3F;
+}
+
+.card-color-3 {
+    background-color: #512B81;
+}
+
+.card-color-4 {
+    background-color: #3E001F;
+}
+
+.card-color-5 {
+    background-color: #00092C;
+}
+
+.card-color-6 {
+    background-color: #850000;
+}
+
+
+@media screen and (max-width: 800px) {
+    .service-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* Testimonial styles */
+.testimonials {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: #040303;
+    margin-bottom: 30px;
+}
+
+.carousel-item {
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    bottom: 10%;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* FAQ Section styles */
+.faq-section {
+    background-color: #202020;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.faq-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 15px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer .brand-title img {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}

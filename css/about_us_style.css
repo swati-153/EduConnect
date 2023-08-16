@@ -1,0 +1,107 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+.about-section {
+    background-image: url(https://npr.brightspotcdn.com/legacy/sites/wvtf/files/201412/graduation.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4em 0;
+    color: white;
+    text-align: center;
+}
+.vision{
+  background-color:#3E001F;
+  margin-bottom: 35px;
+    padding: 2em;
+    border-radius: 10px;
+}
+.about-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.about-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2em 0;
+    }
+}
+.offer-point {
+background-color:#35155D;
+margin-bottom: 0px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.offer-point1 {
+background-color:#512B81;
+margin-bottom: 0px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.offer-point2 {
+background-color: #4477CE;
+margin-bottom: 0px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.offer-point3 {
+background-color: #146C94;
+margin-bottom: 0px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.offer-point4{
+background-color: #900C3F;
+margin-bottom: 0px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.offer-point5{
+background-color:#35155D ;
+margin-bottom: 0px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.offer-point6{
+background-color: #512B81;
+margin-bottom: 40px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.join-us{
+background-color: cadetblue;
+margin-bottom: 2px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
