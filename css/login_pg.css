@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito&family=Open+Sans:wght@400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+  color: #361747;
+  background: white url('https://wallpapercave.com/wp/wp3191390.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 10px;
+  background-color:#282046;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.form-container{
+  border-radius: 10px;
+  padding: 20px;;
+  background: white url('https://wallpapertag.com/wallpaper/middle/c/b/b/369332-cool-book-background-3008x2100-for-1080p.jpg');
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  min-height: 400px;
+}
+.form-container p{
+  padding: 0;
+  margin: 10px;
+}
+.login {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #361e44;
+  border-radius: 20px;
+  width: 90%;
+}
+
+input::placeholder {
+  color: #7a5e89;
+}
+
+.submit-button{
+  font-size: 18px;
+  background-color: #453C67;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.submit-button:hover {
+  background-color: rgb(101, 44, 155);
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.social-icons a img{
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+  height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: #000;
+  text-decoration: none;
+  transition: height 0.15s;
+}
+
+.social-icons a img:hover{
+  height:26px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+a {
+  color: #7d33a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
