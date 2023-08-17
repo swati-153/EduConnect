@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #040303;
+    color: white;
+}
+
+.intro-section {
+    height: 250px;
+    background-image: url('../img/homepg/header-background.png');
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.intro-section h1 {
+    margin: 20px;
+}
+
+.profile-section h2 {
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-cards .details {
+    margin: 20px;
+}
+
+.profile-card {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    flex-basis: calc(33.33% - 20px);
+    background-size: cover;
+    background-position: center;
+}
+
+.student {
+    background-image: url('../img/choose_profile/bg-1.jpg');
+}
+
+.teacher {
+    background-image: url('../img/choose_profile/bg-2.png');
+}
+
+.govt-school {
+    background-image: url('../img/choose_profile/bg-3.png');
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    .profile-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
