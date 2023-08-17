@@ -44,6 +44,10 @@ body {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .contact-info {
@@ -77,10 +81,12 @@ body {
 }
 
 .contact-form {
- text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width:5000px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .contact-form form {
