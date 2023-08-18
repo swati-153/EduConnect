@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito&family=Open+Sans:wght@400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito&family=Open+Sans:wght@400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background: url('../img/contact_us/img-2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #e7e7e7;
+  font-family: Nunito;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-container {
+  height: 600px;
+  width: 27em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 500px;
+}
+
+.form-container p {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #b8b8b8;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  outline: none;
+}
+
+
+input::placeholder {
+  font-size: 15px;
+  color: #c7cacb;
+}
+
+a {
+  color: #5b9dd3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  font-size: 17px;
+  background-color: #0C356A;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 375px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #14578B;
+}
+
+input[type="submit"]:active {
+  background-color: #0A2B4E;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.social-icons a img {
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+  height: 25px;
+  border: 1px solid #5e5e5e;
+  border-radius: 50%;
+  color: #000;
+  text-decoration: none;
+  transition: height 0.15s;
+}
+
+.social-icons a img:hover {
+  height: 26px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
