@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/home_pg_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <title>Educonnect</title>
+</head>
+
+<body>
+  <%- include('include/navbar.ejs') %>
+
+  <div class="slogan-section">
+    <p>" EduConnect - Where Learning and Opportunity Unite ! " <br>
+      The Gateway to a Collaborative Learning Community<br>Discover a world where teachers inspire, students thrive, and
+      opportunities abound.</p>
+  </div>
+
+  <div class="ServicescardContainer">
+    <p class="services">Services</p>
+    <div class="service-card card-color-1">
+      <h2>Matching Educators</h2>
+      <p>Connect qualified teachers with government schools in need of their expertise.</p>
+    </div>
+    <div class="service-card card-color-2">
+      <h2>Performance Insights</h2>
+      <p>Provide schools with insights into teacher attendance and effectiveness.</p>
+    </div>
+    <div class="service-card card-color-3">
+      <h2>Top Performer Recruitment</h2>
+      <p>Reward outstanding educators with recruitment opportunities based on their performance.</p>
+    </div>
+    <div class="service-card card-color-4">
+      <h2>Effortless Posting</h2>
+      <p>Help schools effortlessly post and manage teaching vacancies.</p>
+    </div>
+    <div class="service-card card-color-5">
+      <h2>Diverse Teaching Paths</h2>
+      <p>Extend education impact with freelance teaching, skill-sharing, and online classes.</p>
+    </div>
+    <div class="service-card card-color-6">
+      <h2>Teacher Growth</h2>
+      <p>Support teachers' growth through mentoring and training programs.</p>
+    </div>
+  </div>
+
+
+  <!--Testimonials-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="
+  background-color: #040303;">
+    <p class="testimonials">Testimonials</p>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('../img/homepg/header-background.png');">
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInRight"> Meera Patel</h5>
+          <p class="animate__animated animate__fadeInLeft">EduConnect has been a game-changer for our school. The
+            Teacher List feature is incredibly helpful, allowing us to easily find and choose the best educators for our
+            students. The Teacher Evaluation tool ensures that our teaching staff maintains high standards of
+            performance</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('../img/homepg/header-background.png');">
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInRight">Rajesh Gupta</h5>
+          <p class="animate__animated animate__fadeInLeft">As a school incharge, I'm truly impressed with EduConnect's
+            offerings. The platform's intuitive design and features like Students' Feedback form have helped us better
+            understand our students' needs and improve our educational services. The Tutoring Options link has been a
+            lifesaver for providing extra support</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('../img/homepg/header-background.png');">
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInRight">Priya Sharma</h5>
+          <p class="animate__animated animate__fadeInLeft">EduConnect has transformed the way we manage our school's
+            operations. The Doubt Clearing Rooms have revolutionized the way students seek help, and the Teacher
+            Evaluation feature has made it easier for us to recognize and reward our outstanding educators</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- End of Carousel section -->
+
+  <!-- FAQ Section -->
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is EduConnect?</h3>
+      <p>EduConnect is a platform that connects qualified educators with government schools to provide expertise and
+        opportunities for growth.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How can I register as an educator?</h3>
+      <p>You can register as an educator by visiting our website and clicking on the "Register Now" button. Fill in the
+        required information and follow the instructions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I post teaching vacancies?</h3>
+      <p>Posting teaching vacancies is easy. Simply log in to your EduConnect account, navigate to the dashboard, and
+        follow the steps to create and manage vacancies.</p>
+    </div>
+  </div>
+
+
+  <%- include('include/footer.ejs') %> <!-- Include the footer -->
+
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Teacher Profile</title>
+    <link rel="stylesheet" href="css/login_regn_pg.css">
+    <style>
+        .form-container {
+            height: 600px;
+        }
+
+        input {
+            font-size: 9px;
+        }
+
+        input[type="submit"] {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <p>Update Teacher Profile</p>
+            <form action="/api/update-teacher-profile" method="post" class="update-form">
+                <input type="text" name="name" placeholder="Name" value="<%= teacher.name %>" required>
+                <input type="text" name="qualification" placeholder="Qualification" value="<%= teacher.qualification %>" required>
+                <input type="text" name="teaching_experience" placeholder="Teaching Experience" value="<%= teacher.teachingExperience %>" required>
+                <input type="tel" name="phone" placeholder="Phone Number" value="<%= teacher.phoneNumber %>" required>
+                <input type="email" name="email" placeholder="Email" value="<%= teacher.email %>" required>
+                <input type="password" name="password" placeholder="New Password">
+                <input type="password" name="retype_password" placeholder="Retype New Password">
+                <input type="submit" value="UPDATE">
+            </form>
+            <p>Return to <a href="/teacher-dashboard">Dashboard</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
