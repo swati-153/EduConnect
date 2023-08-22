@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const SchoolSchema = new mongoose.Schema({
-    schoolName: { type: String, required: true },
-    phoneNumber: { type: String, required: true },
-    email: { type: String, required: true, unique: true, lowercase: true },
-    location: { type: String, required: true },
-    password: { type: String, required: true }
+    schoolName: { type: String },
+    phoneNumber: { type: String },
+    email: { type: String, unique: true, lowercase: true },
+    location: { type: String },
+    password: { type: String }
 });
 
 const SchoolModel = mongoose.model('School', SchoolSchema);
