@@ -11,7 +11,7 @@ const contactUs = (req, res) => {
 };
 
 const login = (req, res) => {
-    res.render('login');
+    res.render('login', { success: req.query.success });
 };
 
 const chooseProfile = (req, res) => {

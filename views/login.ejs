@@ -10,26 +10,32 @@
 
 <body>
     <%- include('include/navbar.ejs') %>
-    <div class="https://www.dporganizer.com/wp-content/uploads/2018/02/15145454/education-background.jpg"></div>
-    <div class="container">
-        <div class="form-container">
-            <p>Hey, Enter your details<br>to sign in to your account !!</p>
-            <form action="#">
-                <input type="email" id="email" name="email" required placeholder="Enter your e-mail">
-                <input type="password" id="password" name="password" required placeholder="Enter your Password">
-                <input class="submit-button" type="submit" value="Let's Start">
+    <% if (success === 'registration') { %>
+        <div class="success-message">Registration successful. You can now log in.</div>
+    <% } %>
 
-            </form>
-            <div class="social-login">
-                <p>Or sign in with:</p>
-                <div class="social-icons">
-                    <a href="#"><img src="img/login-pg-img/google.png" alt=""></a>
-                    <a href="#"><img src="img/login-pg-img/github.png" alt=""></a>
+                <div class="https://www.dporganizer.com/wp-content/uploads/2018/02/15145454/education-background.jpg">
                 </div>
-            </div>
-            <p>Don't have an account? <a href="register.html">Sign up</a></p>
-        </div>
-    </div>
+                <div class="container">
+                    <div class="form-container">
+                        <p>Hey, Enter your details<br>to sign in to your account !!</p>
+                        <form action="#">
+                            <input type="email" id="email" name="email" required placeholder="Enter your e-mail">
+                            <input type="password" id="password" name="password" required
+                                placeholder="Enter your Password">
+                            <input class="submit-button" type="submit" value="Let's Start">
+
+                        </form>
+                        <div class="social-login">
+                            <p>Or sign in with:</p>
+                            <div class="social-icons">
+                                <a href="#"><img src="img/login-pg-img/google.png" alt=""></a>
+                                <a href="#"><img src="img/login-pg-img/github.png" alt=""></a>
+                            </div>
+                        </div>
+                        <p>Don't have an account? <a href="register.html">Sign up</a></p>
+                    </div>
+                </div>
 </body>
 
 </html>
