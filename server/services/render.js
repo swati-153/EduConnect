@@ -11,8 +11,10 @@ const contactUs = (req, res) => {
 };
 
 const login = (req, res) => {
-    res.render('login', { success: req.query.success });
+    const errorMessage = req.query.error === 'invalid_credentials' ? 'Invalid email or password' : '';
+    res.render('login', { success: req.query.success, errorMessage });
 };
+
 
 const chooseProfile = (req, res) => {
     res.render('choose_profile');
@@ -31,6 +33,10 @@ const SchoolRegistrationForm = (req, res) => {
     res.render('school/school_regn_form');
 };
 
+const StudentDashboard = (req, res) => {
+    res.render('student/student_dashboard', { success: req.query.success });
+}
+
 
 module.exports = {
     aboutUs,
@@ -40,5 +46,6 @@ module.exports = {
     home_pg,
     StudentRegistrationForm,
     TeacherRegistrationForm,
-    SchoolRegistrationForm
+    SchoolRegistrationForm,
+    StudentDashboard
 };
