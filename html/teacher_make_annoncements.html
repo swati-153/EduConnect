@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make Announcements - Teacher</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .announcement-form {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .announcement-form input[type="text"],
+  .announcement-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  .announcement-form textarea {
+    resize: vertical;
+  }
+  .announcement-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .announcement-form button:hover {
+    background-color: #00b3b3;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Make Announcements - Teacher</h1>
+  </header>
+  <div class="container">
+    <div class="announcement-form">
+      <form>
+        <input type="text" placeholder="Announcement Title" name="title" required>
+        
+        <textarea placeholder="Announcement Message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Post Announcement</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Make Announcements - Teacher</p>
+  </footer>
+</body>
+</html>
